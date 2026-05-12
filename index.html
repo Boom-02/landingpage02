@@ -1,49 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trading Katta Telegram Invite</title>
 
+  <title> ट्रेडिंग कट्टा</title>
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
 
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #f8fbff, #ffffff);
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    .glass {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(10px);
+    body{
+      font-family:'Poppins',sans-serif;
+      background:
+      radial-gradient(circle at top,#e0f2ff 0%,#ffffff 45%);
+      overflow-x:hidden;
     }
 
-    .pulse {
-      animation: pulse 2s infinite;
+    .glass{
+      background:rgba(255,255,255,0.92);
+      backdrop-filter:blur(14px);
     }
 
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(0, 120, 215, 0.4);
+    .pulse{
+      animation:pulse 2s infinite;
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(0,136,204,0.5);
       }
-      70% {
-        transform: scale(1.03);
-        box-shadow: 0 0 0 16px rgba(0, 120, 215, 0);
+
+      70%{
+        transform:scale(1.03);
+        box-shadow:0 0 0 18px rgba(0,136,204,0);
       }
-      100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(0, 120, 215, 0);
+
+      100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(0,136,204,0);
       }
     }
+
+    .float{
+      animation:float 3s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0px);
+      }
+
+      50%{
+        transform:translateY(-8px);
+      }
+
+      100%{
+        transform:translateY(0px);
+      }
+    }
+
+    .fadeIn{
+      animation:fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .glow{
+      box-shadow:
+      0 0 20px rgba(0,136,204,0.25),
+      0 0 40px rgba(0,136,204,0.12);
+    }
+
   </style>
 
-  <!-- Meta Pixel Code -->
+  <!-- Meta Pixel -->
   <script>
     !function(f,b,e,v,n,t,s)
     {
@@ -52,16 +106,21 @@
         n.callMethod ?
         n.callMethod.apply(n,arguments) : n.queue.push(arguments)
       };
+
       if(!f._fbq)f._fbq=n;
+
       n.push=n;
       n.loaded=!0;
       n.version='2.0';
       n.queue=[];
+
       t=b.createElement(e);
       t.async=!0;
       t.src=v;
+
       s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)
+
     }(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
 
@@ -69,100 +128,134 @@
     fbq('track', 'PageView');
   </script>
 
-  <noscript>
-    <img
-      height="1"
-      width="1"
-      style="display:none"
-      src="https://www.facebook.com/tr?id=1876223476388006&ev=PageView&noscript=1"
-    />
-  </noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 
-<body class="min-h-screen flex items-center justify-center px-4 py-8">
+<body class="min-h-screen flex items-center justify-center px-4 py-10">
 
-  <div class="w-full max-w-md">
+  <!-- Floating Join Alert -->
+  <div class="fixed top-5 left-1/2 -translate-x-1/2 z-50">
+    <div class="bg-black text-white px-5 py-2 rounded-full text-sm shadow-2xl animate-bounce">
+      🔥 27 traders joined today
+    </div>
+  </div>
+
+  <div class="w-full max-w-md fadeIn">
 
     <!-- Telegram Top Bar -->
-    <div class="bg-[#0088cc] text-white text-center py-3 rounded-t-3xl shadow-lg">
-      <p class="text-sm md:text-base">
-        Don’t have
+    <div class="bg-[#0088cc] text-white text-center py-3 rounded-t-3xl shadow-xl">
+      <p class="text-sm md:text-base font-medium">
+        Telegram नाहीये?
         <a
           href="https://web.telegram.org/"
           target="_blank"
-          class="font-semibold underline"
+          class="underline font-semibold"
         >
-          Telegram
+          आत्ताच वापरा
         </a>
-        yet? Try it now!
       </p>
     </div>
 
     <!-- Main Card -->
-    <div class="glass rounded-b-3xl shadow-2xl px-6 py-8 border border-blue-100">
+    <div class="glass rounded-b-3xl shadow-2xl px-6 py-8 border border-blue-100 glow">
 
       <!-- Logo -->
       <div class="flex justify-center mb-5">
         <img
           src="https://i.ibb.co/WvFh7Y0H/Gemini-Generated-Image-3nzico3nzico3nzi.png"
-          alt="Trading Katta Logo"
-          class="w-28 h-28 rounded-full border-4 border-blue-500 shadow-lg"
+          alt="Trading Logo"
+          class="w-28 h-28 rounded-full border-4 border-blue-500 shadow-xl float"
         />
       </div>
 
-      <!-- Title -->
+      <!-- Heading -->
       <h1 class="text-3xl font-extrabold text-center text-gray-900 leading-tight">
-        ट्रेडिंग कट्टा 🔝🚀🤝
+      र ट्रेडिंग कट्टा 📈
       </h1>
 
-      <!-- Subscribers -->
-      <p class="text-center text-gray-500 mt-2 text-base">
-        2875 subscribers
+      <!-- Sub Heading -->
+      <p class="text-center text-gray-500 mt-3 text-base">
+        🔥 3,000+ Active Traders Already Joined
       </p>
 
       <!-- Divider -->
-      <div class="w-20 h-1 bg-blue-500 rounded-full mx-auto my-5"></div>
+      <div class="w-24 h-1 bg-[#0088cc] rounded-full mx-auto my-6"></div>
 
-      <!-- Content -->
+      <!-- Benefits -->
       <div class="space-y-4 text-center">
 
-        <div class="bg-blue-50 rounded-2xl p-4">
-          <p class="text-gray-800 font-medium text-base">
-            👨‍💻 Start Your Profitable Journey with US
+        <!-- Main Offer -->
+        <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-5 border border-green-200">
+          <p class="text-green-800 font-bold text-lg">
+            ✅ दररोज मोफत ट्रेडिंग कॉल्स
+          </p>
+
+          <p class="text-green-700 mt-2 text-sm">
+            Entry • Target • Stoploss सहित
           </p>
         </div>
 
-        <div class="bg-gray-50 rounded-2xl p-4">
-          <p class="text-gray-700 text-[15px] leading-relaxed">
-            🚀 ऍडव्हान्स कॉल आणि active झाल्यावर active मेसेज येणार
+        <!-- Features -->
+        <div class="bg-gray-50 rounded-2xl p-5 text-left space-y-4">
+
+          <div class="flex items-center gap-3">
+            <span class="text-xl">📈</span>
+            <p class="text-gray-800 font-medium">
+              Live Market Updates
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="text-xl">🚀</span>
+            <p class="text-gray-800 font-medium">
+              Intraday & Swing Calls
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="text-xl">🔥</span>
+            <p class="text-gray-800 font-medium">
+              Instant Active Trade Alerts
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="text-xl">💸</span>
+            <p class="text-gray-800 font-medium">
+              Beginner Friendly Setup
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Urgency -->
+        <div class="bg-red-50 rounded-2xl p-4 border border-red-100">
+          <p class="text-red-700 font-bold text-base">
+            ⚠️ Free Joining Closing Soon
           </p>
         </div>
 
-        <div class="bg-green-50 rounded-2xl p-4 border border-green-100">
-          <p class="text-green-700 font-semibold text-base">
-            ✅ आताच lifetime फ्री ग्रुप जॉईन करा 👇🏻
-          </p>
-        </div>
       </div>
 
       <!-- Countdown -->
-      <div class="text-center mt-6">
-        <p class="text-red-600 font-bold text-lg">
-          Invitation closes in
-          <span id="countdown">10</span>s
+      <div class="text-center mt-7">
+        <p class="text-red-600 font-bold text-lg animate-pulse">
+          ⏳ Redirecting in
+          <span id="countdown">8</span>s
         </p>
       </div>
 
-      <!-- Button -->
-      <div class="mt-6 text-center">
+      <!-- CTA Button -->
+      <div class="mt-7 text-center">
+
         <a
           id="join-now-btn"
           href="https://t.me/+BIIWrmO6Ct9jZjM1"
           target="_blank"
           rel="noopener noreferrer"
-          class="pulse inline-flex items-center gap-3 bg-[#0088cc] hover:bg-[#0077b5] transition-all duration-300 text-white font-semibold text-lg px-8 py-4 rounded-2xl shadow-xl"
+          class="pulse inline-flex items-center justify-center gap-3 bg-[#0088cc] hover:bg-[#0077b5] transition-all duration-300 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl w-full"
         >
+
+          <!-- Telegram Icon -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -175,55 +268,64 @@
             />
           </svg>
 
-          VIEW IN TELEGRAM
+          JOIN FREE TELEGRAM NOW
+
         </a>
+
       </div>
 
-      <!-- Footer -->
+      <!-- Trust Line -->
       <p class="text-center text-gray-500 text-sm mt-6 leading-relaxed">
-        If you have Telegram you can view and join,<br />
-        <span class="font-semibold text-gray-700">
-          ट्रेडिंग कट्टा 🔝🚀🤝
-        </span>
-        right away.
+        🚀 Join now and never miss profitable market opportunities.
       </p>
 
     </div>
+
   </div>
 
+  <!-- Countdown Script -->
   <script>
-    let timeLeft = 10;
 
-    const countdownEl = document.getElementById("countdown");
-    const joinBtn = document.getElementById("join-now-btn");
+    let timeLeft = 8;
+
+    const countdownEl =
+    document.getElementById("countdown");
+
+    const joinBtn =
+    document.getElementById("join-now-btn");
 
     const timer = setInterval(() => {
 
-      if (timeLeft <= 0) {
+      if(timeLeft <= 0){
+
         clearInterval(timer);
+
         countdownEl.textContent = "0";
 
-        // Auto redirect
+        // Auto Redirect
         joinBtn.click();
 
       } else {
+
         countdownEl.textContent = timeLeft;
+
       }
 
       timeLeft--;
 
-    }, 1000);
+    },1000);
 
-    // Pixel Event Tracking
+    // Pixel Events
     joinBtn.addEventListener("click", function () {
 
       fbq('track', 'Lead');
 
-      fbq('trackCustom', 'JoinNowClicked', {
-        channel_name: 'Trading Katta'
+      fbq('trackCustom', 'TelegramJoinClick', {
+        channel_name: 'Maharashtra Trading Katta'
       });
 
     });
+
   </script>
 
 </body>
