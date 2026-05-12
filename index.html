@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="mr">
 
@@ -6,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Trading Katta</title>
+  <title> ट्रेडिंग कट्टा</title>
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <style>
 
@@ -18,10 +21,7 @@
       font-family:'Poppins',sans-serif;
       background:#0f172a;
       color:white;
-    }
-
-    .glow{
-      box-shadow:0 0 30px rgba(0,136,204,.4);
+      overflow-x:hidden;
     }
 
     .pulse{
@@ -44,7 +44,45 @@
 
     }
 
+    .glow{
+      box-shadow:
+      0 0 25px rgba(0,136,204,.35);
+    }
+
   </style>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+
+      n=f.fbq=function(){
+        n.callMethod
+        ? n.callMethod.apply(n,arguments)
+        : n.queue.push(arguments)
+      };
+
+      if(!f._fbq)f._fbq=n;
+
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+
+    }(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1876223476388006');
+    fbq('track', 'PageView');
+  </script>
 
 </head>
 
@@ -52,38 +90,38 @@
 
   <div class="max-w-md mx-auto px-4 py-6">
 
-    <!-- TOP BAR -->
-    <div class="bg-[#0088cc] rounded-2xl p-3 text-center font-semibold text-sm">
+    <!-- Top Social Proof -->
+    <div class="bg-[#0088cc] rounded-2xl p-3 text-center font-semibold text-sm shadow-lg">
       🔥 आज खूप लोक जॉईन होत आहेत
     </div>
 
-    <!-- MAIN CARD -->
-    <div class="bg-[#111827] rounded-3xl p-6 mt-4 border border-gray-800">
+    <!-- Main Card -->
+    <div class="bg-[#111827] rounded-3xl p-6 mt-4 border border-gray-800 shadow-2xl">
 
-      <!-- LOGO -->
+      <!-- Logo -->
       <div class="flex justify-center">
 
         <img
-          src="YOUR LOGO"
+          src="https://i.ibb.co/WvFh7Y0H/Gemini-Generated-Image-3nzico3nzico3nzi.png"
           class="w-24 h-24 rounded-full border-4 border-[#0088cc]">
 
       </div>
 
-      <!-- TITLE -->
+      <!-- Heading -->
       <h1 class="text-3xl font-extrabold text-center mt-5 leading-tight">
 
-          ट्रेडिंग कट्टा 📈
+   ट्रेडिंग कट्टा 📈
 
       </h1>
 
-      <!-- SUBTITLE -->
+      <!-- Sub Heading -->
       <p class="text-center text-gray-300 mt-3">
 
         🔥 3000+ लोक आधीच जॉईन झाले आहेत
 
       </p>
 
-      <!-- MAIN OFFER -->
+      <!-- Offer -->
       <div class="bg-green-500/10 border border-green-500 rounded-2xl p-4 mt-6 text-center">
 
         <p class="text-green-400 font-bold text-xl">
@@ -100,7 +138,7 @@
 
       </div>
 
-      <!-- BENEFITS -->
+      <!-- Features -->
       <div class="space-y-3 mt-6">
 
         <div class="bg-[#1f2937] rounded-xl p-4">
@@ -121,16 +159,16 @@
 
       </div>
 
-      <!-- SCREENSHOT -->
+      <!-- Profit Screenshot -->
       <div class="mt-6">
 
         <img
-          src="YOUR PROFIT SCREENSHOT"
-          class="rounded-2xl border border-gray-700">
+          src="https://i.ibb.co/8D9YQ7g/profit.jpg"
+          class="rounded-2xl border border-gray-700 w-full">
 
       </div>
 
-      <!-- URGENCY -->
+      <!-- Urgency -->
       <div class="bg-yellow-500/10 border border-yellow-500 rounded-2xl p-4 mt-6 text-center">
 
         <p class="text-yellow-400 font-semibold">
@@ -143,15 +181,17 @@
 
       <!-- CTA -->
       <a
-        href="YOUR TELEGRAM LINK"
+        id="join-now-btn"
+        href="https://t.me/+BIIWrmO6Ct9jZjM1"
         target="_blank"
-        class="pulse glow bg-[#0088cc] rounded-2xl p-5 flex items-center justify-center gap-3 font-bold text-lg mt-6">
+        rel="noopener noreferrer"
+        class="pulse glow bg-[#0088cc] rounded-2xl p-5 flex items-center justify-center gap-3 font-bold text-lg mt-6 text-center">
 
         🔥 आत्ताच FREE GROUP जॉईन करा
 
       </a>
 
-      <!-- BOTTOM TEXT -->
+      <!-- Bottom Text -->
       <p class="text-center text-gray-400 text-sm mt-4">
 
         👆 वर क्लिक करून Telegram ओपन करा
@@ -162,7 +202,24 @@
 
   </div>
 
+  <!-- Pixel Tracking -->
+  <script>
+
+    const joinBtn =
+    document.getElementById("join-now-btn");
+
+    joinBtn.addEventListener("click", function () {
+
+      fbq('track', 'Lead');
+
+      fbq('trackCustom', 'TelegramJoinClick', {
+        channel_name: 'Maharashtra Trading Katta'
+      });
+
+    });
+
+  </script>
+
 </body>
 
 </html>
-```
